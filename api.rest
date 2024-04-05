@@ -1,0 +1,33 @@
+### good request
+POST http://localhost:3000/api/todos
+Content-Type: application/json
+
+{
+  "title": "Buy milk",
+  "completed": false
+}
+
+### bad request, no completed
+POST http://localhost:3000/api/todos
+Content-Type: application/json
+
+{
+  "title": "Buy milk"
+}
+
+### bad request, title too small
+POST http://localhost:3000/api/todos
+Content-Type: application/json
+
+{
+  "title": "A",
+  "completed": false
+}
+
+### bad request, title is too small and the completed property is not there
+POST http://localhost:3000/api/todos
+Content-Type: application/json
+
+{
+  "title": "Bu"
+}
