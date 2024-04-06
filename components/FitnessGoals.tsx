@@ -17,7 +17,6 @@ import { Input } from './ui/input';
 import { RadioGroup, RadioGroupItem } from './ui/radio-group';
 
 // LEVEL 3 step 2: koristeći resolver iz `react-hook-form` bindati validacijsku shemu na formu
-// const FITNESS_GOALS_RESOLVER = zodResolver(FITNESS_GOALS_SCHEMA);
 
 export function FitnessGoals(props: {
 	nextStep: () => void;
@@ -27,15 +26,12 @@ export function FitnessGoals(props: {
 }) {
 	const form = useForm<z.infer<typeof FITNESS_GOALS_SCHEMA>>({
 		// LEVEL 3 step 2: koristeći resolver iz `react-hook-form` bindati validacijsku shemu na formu
-		// resolver: FITNESS_GOALS_RESOLVER,
 		defaultValues: props.data,
 	});
 
 	const submitFitnessGoals = form.handleSubmit((formValues) => {
-		// LEVEL 3 step 3: 3. nakon validacije podataka spremiti podatke u zadnjički state
-		// props.setData(formValues);
+		// LEVEL 3 step 3: nakon validacije podataka spremiti podatke u zadnjički state
 		// LEVEL 2 step 3: bindati handlere na buttonima za navigaciju
-		// props.nextStep();
 	});
 
 	return (

@@ -20,31 +20,9 @@ export function ReviewAndConfirm(props: {
 
 	const handleSubmit = form.handleSubmit(async () => {
 		// LEVEL 3 step 4: u zadnjem koraku iskoristiti sve 3 sheme za validirati podatke prije nego se šalju igdje
-		// try {
-		// 	PROFILE_SCHEMA.parse(props.data);
-		// } catch (error) {
-		// 	toast({
-		// 		variant: 'destructive',
-		// 		title: 'Invalid data format',
-		// 		description: 'Please review your information and try again.',
-		// 	});
-		// }
 		// LEVEL 3 step 5: napraviti HTTP POST request prema `/api/profile` sa podacima forme i obrisati session storage u slučaju uspješnog odgovora
-		// try {
-		// 	await fetch('/api/profile', {
-		// 		method: 'POST',
-		// 		body: JSON.stringify(props.data),
-		// 	});
 		// LEVEL 4 step 6: prikazati success screen u slučaju da sve prođe uredu
-		// 	router.push('/success');
-		// } catch (error) {
 		// LEVEL 4 step 5: u slučaju greške prikazati toast poruku
-		// 	toast({
-		// 		variant: 'destructive',
-		// 		title: 'Something went wrong',
-		// 		description: 'Please review your information and try again.',
-		// 	});
-		// }
 	});
 
 	return (

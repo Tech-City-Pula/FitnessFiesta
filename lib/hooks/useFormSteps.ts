@@ -7,15 +7,11 @@ export function useFormSteps() {
     const [step, setStep] = useState(MIN_STEP);
 
 	const nextStep = () => {
-		// if (step < MAX_STEP) {
-		// 	setStep(step + 1);
-		// }
+		
 	};
 
 	const previousStep = () => {
-		// if (step > MIN_STEP) {
-		// 	setStep(step - 1);
-		// }
+		
 	};
 
     return {

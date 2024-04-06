@@ -17,7 +17,6 @@ import { USER_INFORMATION_SCHEMA } from '@/lib/validation-schemas/form';
 import { Button } from './ui/button';
 
 // LEVEL 3 step 2: koristeći resolver iz `react-hook-form` bindati validacijsku shemu na formu
-// const USER_INFORMATION_RESOLVER = zodResolver(USER_INFORMATION_SCHEMA);
 
 export function UserInformation(props: {
 	nextStep: () => void;
@@ -26,15 +25,12 @@ export function UserInformation(props: {
 }) {
 	const form = useForm<z.infer<typeof USER_INFORMATION_SCHEMA>>({
 		// LEVEL 3 step 2: koristeći resolver iz `react-hook-form` bindati validacijsku shemu na formu
-		// resolver: USER_INFORMATION_RESOLVER,
 		defaultValues: props.data,
 	});
 
 	const submitUserInformation = form.handleSubmit((formValues) => {
-		// LEVEL 3 step 3: 3. nakon validacije podataka spremiti podatke u zadnjički state
-		// props.setData(formValues);
+		// LEVEL 3 step 3: nakon validacije podataka spremiti podatke u zadnjički state
 		// LEVEL 2 step 3: bindati handlere na buttonima za navigaciju
-		// props.nextStep();
 	});
 
 	return (

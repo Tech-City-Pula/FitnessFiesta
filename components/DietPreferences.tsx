@@ -24,7 +24,6 @@ import { Checkbox } from './ui/checkbox';
 import { ALLERGIES } from '@/lib/const';
 
 // LEVEL 3 step 2: koristeći resolver iz `react-hook-form` bindati validacijsku shemu na formu
-// const DIET_PREFERENCES_RESOLVER = zodResolver(DIET_PREFERENCES_SCHEMA);
 
 export function DietPreferences(props: {
 	nextStep: () => void;
@@ -34,15 +33,12 @@ export function DietPreferences(props: {
 }) {
 	const form = useForm<z.infer<typeof DIET_PREFERENCES_SCHEMA>>({
 		// LEVEL 3 step 2: koristeći resolver iz `react-hook-form` bindati validacijsku shemu na formu
-		// resolver: DIET_PREFERENCES_RESOLVER,
 		defaultValues: props.data,
 	});
 
 	const handleSubmit = form.handleSubmit((formValues) => {
 		// LEVEL 3 step 3: 3. nakon validacije podataka spremiti podatke u zadnjički state
-		// props.setData(formValues);
 		// LEVEL 2 step 3: bindati handlere na buttonima za navigaciju
-		// props.nextStep();
 	});
 
 	return (

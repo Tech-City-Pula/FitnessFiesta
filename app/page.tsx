@@ -15,11 +15,11 @@ export default function HomePage() {
 		useState<z.infer<typeof PROFILE_SCHEMA>>(INITIAL_DATA);
 
 	// LEVEL 2 step 2: instancirati hook na top levelu i proslijediti handlere u formu
-	// const { step, nextStep, previousStep } = useFormSteps();
 
 	return (
 		<div className='w-screen h-screen grid grid-cols-2'>
 			<div className='col-span-1 bg-blue-600 py-12 px-6 h-full'>
+				{/* LEVEL 2 step 2: instancirati hook na top levelu i proslijediti handlere u formu */}
 				{/* {step === 0 && (
 					<UserInformation
 						data={data}
@@ -64,11 +64,12 @@ export default function HomePage() {
 			</div>
 			<div className='col-span-1 flex flex-col justify-center h-full'>
 				<div className='mx-auto max-w-sm'>
-					{/* LEVEL 2 step 4: ovisno o koraku prikazati korak i opis koraka */}
-					{/* <h1 className='text-3xl font-bold mb-4'>{STEPS[step].title}</h1>
+					<h1 className='text-3xl font-bold mb-4'>
+						{/* LEVEL 2 step 4: ovisno o koraku prikazati korak i opis koraka */}
+					</h1>
 					<p className='text-lg text-gray-500 h-24'>
-						{STEPS[step].description}
-					</p> */}
+						{/* LEVEL 2 step 4: ovisno o koraku prikazati korak i opis koraka */}
+					</p>
 				</div>
 			</div>
 		</div>
